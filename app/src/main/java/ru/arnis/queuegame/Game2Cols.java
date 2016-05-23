@@ -132,13 +132,7 @@ public class Game2Cols extends AppCompatActivity implements GameMeth {
 //            spawnTimer.cancel();
 //        Threading.status = false;
 
-        for (int i =0; i<threads.size();i++)
-            threads.get(i).interrupt();
-
-        Threading.status = false;
-        threads = new ArrayList<>();
-        GameSet.clearSet();
-        Cashier.reset();
+       resetActivity();
 
     }
 
@@ -456,6 +450,16 @@ public class Game2Cols extends AppCompatActivity implements GameMeth {
 //        player.setLayoutParams(params);
 //
 //    }
+
+    public void resetActivity(){
+        for (int i =0; i<threads.size();i++)
+            threads.get(i).interrupt();
+
+        Threading.status = false;
+        threads = new ArrayList<>();
+        GameSet.clearSet();
+        Cashier.reset();
+    }
 
 
 
