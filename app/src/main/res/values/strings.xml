@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">QueueGame</string>
+    <string-array name="columns">
+        <item>2 columns</item>
+        <item>3 columns</item>
+        <item>4 columns</item>
+    </string-array>
+    <string-array name="rows">
+        <item>4 rows</item>
+        <item>5 rows</item>
+        <item>6 rows</item>
+        <item>7 rows</item>
+    </string-array>
+</resources>

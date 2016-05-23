@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Settings"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:padding="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/button_debug"
+        android:checked="false"
+        android:layout_below="@+id/textView2"
+        android:layout_alignRight="@+id/select_columns"
+        android:layout_alignEnd="@+id/select_columns" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Toggle debug mode"
+        android:id="@+id/debug"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:layout_alignBottom="@+id/button_debug"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_back_settings"
+        android:src="@drawable/arrow_back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/select_columns"
+        android:padding="5dp"
+        android:layout_below="@+id/debug"
+        android:layout_toRightOf="@+id/debug"
+        android:layout_toEndOf="@+id/debug" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/select_rows"
+        android:padding="5dp"
+        android:layout_below="@+id/select_columns"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/select_columns"
+        android:layout_alignStart="@+id/select_columns" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total columns"
+        android:id="@+id/textView4"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:layout_above="@+id/select_rows"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total rows"
+        android:id="@+id/textView5"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:layout_alignBottom="@+id/select_rows"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
